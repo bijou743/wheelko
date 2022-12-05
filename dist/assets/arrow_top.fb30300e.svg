@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,20 C0,31.046 8.954,40 20,40 C31.046,40 40,31.046 40,20 C40,8.954 31.046,0 20,0 C8.954,0 0,8.954 0,20 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-126.000000, -588.000000)">
+            <g id="Group" transform="translate(126.000000, 588.000000)">
+                <g id="Group-33">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-32"></g>
+                    <path d="M40,20 C40,8.954 31.046,0 20,0 C8.954,0 0,8.954 0,20 C0,31.046 8.954,40 20,40 C31.046,40 40,31.046 40,20 Z" id="Stroke-31" stroke="#D0D0D0" stroke-width="4" mask="url(#mask-2)"></path>
+                </g>
+                <polyline id="Stroke-34" stroke="#D0D0D0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="14.3433 21 20.0003 15.343 25.6563 21"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
