@@ -17,10 +17,10 @@ const registrate = () => {
 		>
 			<input type="email" placeholder="E-mail" required />
 
-			<div class="flex justify-between w-full">
-				<input type="text" placeholder="Имя" class="!w-36" required />
+			<div class="flex justify-between w-full flex-col md:flex-row">
+				<input type="text" placeholder="Имя" class="md:!w-36" required />
 
-				<input type="text" placeholder="Фамилия" class="!w-40" required />
+				<input type="text" placeholder="Фамилия" class="md:!w-40" required />
 			</div>
 
 			<input type="password" placeholder="Пароль" required />
