@@ -1,0 +1,92 @@
+@import './fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	scroll-behavior: smooth;
+	min-height: 100vh;
+}
+
+h1 {
+	@apply font-bold md:text-4xl text-3xl tracking-tighter mb-5;
+	font-family: 'DINRoundPro';
+}
+
+h2 {
+	@apply font-bold md:text-4xl text-3xl tracking-tighter mb-5;
+	font-family: 'DINRoundPro';
+}
+
+h3 {
+	@apply font-bold md:text-2xl text-2xl tracking-tighter mb-3;
+	font-family: 'DINRoundPro';
+}
+
+a {
+	cursor: pointer;
+}
+
+#app {
+	@apply grid items-start;
+	min-height: 100vh;
+	grid-template-rows: min-content;
+}
+
+.text ul {
+	@apply list-disc pl-8;
+}
+
+.text ol {
+	@apply list-decimal pl-8;
+}
+
+.text ul li,
+.text ol li {
+	@apply mb-4 opacity-50 pl-2 text-sm leading-5;
+}
+
+.text p {
+	@apply mb-4 opacity-50 text-sm leading-5;
+}
+
+aside {
+	@apply flex-grow;
+}
+
+aside.side-menu {
+	@apply font-bold absolute hidden md:relative md:block;
+}
+
+main {
+	@apply lg:w-[860px] md:w-[420px] sm:w-[320px];
+}
+
+button {
+	font-family: 'DINRoundPro';
+}
+
+.btn {
+	font-family: 'DINRoundPro';
+	@apply bg-purple text-white rounded-md px-4 pt-1 pb-2 lg:px-5 lg:pt-2 lg:pb-3 text-lg lg:text-xl inline-block text-center;
+
+	&.pink {
+		@apply bg-pink;
+	}
+
+	&.green {
+		@apply bg-green;
+	}
+}
+
+/* анимация vue */
+.v-enter-active,
+.v-leave-active {
+	transition: opacity 0.2s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+	opacity: 0;
+}
