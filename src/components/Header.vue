@@ -47,7 +47,10 @@ const sideMenuShow = ref(false);
 				</div>
 
 				<Teleport to="body">
-					<SideMenuMobile :show="sideMenuShow" />
+					<SideMenuMobile
+						:show="sideMenuShow"
+						@close-side-menu="sideMenuShow = false"
+					/>
 				</Teleport>
 
 				<RouterLink to="/">
@@ -88,9 +91,12 @@ const sideMenuShow = ref(false);
 				<div class="leading-tight hidden lg:block">
 					<p>пн &mdash; сб 10:00 - 20:00</p>
 					<p>вс 10:00 - 18:00</p>
-					<a href="/contacts" class="text-green underline hover:no-underline">
+					<RouterLink
+						to="/contacts"
+						class="text-green underline hover:no-underline"
+					>
 						адреса всех магазинов
-					</a>
+					</RouterLink>
 				</div>
 
 				<div class="md:w-32 flex justify-end">

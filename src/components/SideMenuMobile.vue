@@ -1,11 +1,24 @@
 <script setup lang="ts">
+import { watch, type Ref, inject } from 'vue';
+import { useRoute } from 'vue-router';
 import SearchForm from './SearchForm.vue';
 import AuthLinks from './AuthLinks.vue';
 import SideMenu from './SideMenu.vue';
 
-const { show } = defineProps<{
-	show: boolean;
-}>();
+defineProps({
+	show: Boolean,
+});
+
+const emits = defineEmits(['closeSideMenu']);
+
+const route = useRoute();
+
+watch(
+	() => route.path,
+	async () => {
+		emits('closeSideMenu');
+	}
+);
 </script>
 
 <template>

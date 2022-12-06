@@ -6,13 +6,13 @@
 			<h1>Контакты</h1>
 
 			<iframe
-				class="w-full h-[400px] mb-20 mt-10"
+				class="w-full h-[400px] mb-10 md:mb-20 mt-10"
 				src="https://yandex.ru/map-widget/v1/?um=constructor%3Aaf50014d375d6c5c9b6bf4a449dc0aa42c684cbb6c98db8c3a06b393fcb90a09&amp;source=constructor"
 				frameborder="0"
 			></iframe>
 
-			<div class="flex justify-between">
-				<div>
+			<div class="flex justify-between flex-col md:flex-row">
+				<div class="mb-10 md:mb-0">
 					<h3>Магазин на Маклина</h3>
 
 					<p class="mb-5">
