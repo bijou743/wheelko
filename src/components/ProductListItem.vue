@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
 import type { IProduct } from '../interfaces/IProduct';
-import { getImgSrc } from '../global/index';
 
 const { product } = defineProps<{
 	product: IProduct;
@@ -13,7 +12,7 @@ const { product } = defineProps<{
 		<RouterLink :to="`/catalog/product/${product.id}`">
 			<div
 				class="product-item__image"
-				:style="`background-image: url('${getImgSrc(product.image)}');`"
+				:style="`background-image: url('${product.image}');`"
 			>
 				<div
 					v-if="product.hit"

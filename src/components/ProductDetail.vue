@@ -2,7 +2,6 @@
 import { provide, ref, type Ref } from 'vue';
 import type { IProduct } from '@/interfaces/IProduct';
 import { useProductStore } from '@/stores/ProductStore';
-import { getImgSrc } from '../global/index';
 import ProductDescription from './ProductDetail/ProductDescription.vue';
 import ProductEquipment from './ProductDetail/ProductEquipment.vue';
 import ProductReviews from './ProductDetail/ProductReviews.vue';
@@ -43,10 +42,7 @@ provide('modalOpen', reviewModalOpen);
 			>
 				<div class="lg:basis-3/5 md:basis-2/3 w-full">
 					<div class="px-10 lg:w-[560px]">
-						<img
-							:src="`${getImgSrc(product.image)}`"
-							:alt="`${product.title}`"
-						/>
+						<img :src="`${product.image}`" :alt="`${product.title}`" />
 					</div>
 				</div>
 

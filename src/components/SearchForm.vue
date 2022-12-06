@@ -2,7 +2,6 @@
 import { ref, type Ref, watch } from 'vue';
 import type { IProduct } from '@/interfaces/IProduct';
 import { useProductStore } from '@/stores/ProductStore';
-import { getImgSrc } from '../global/index';
 
 const productStore = useProductStore();
 
@@ -39,7 +38,7 @@ watch(searchPhrase, async (newSearchPhrase) => {
 		<div v-if="searchResults.length > 0" class="search-results">
 			<div v-for="p in searchResults" class="search-results__item">
 				<RouterLink :to="`/catalog/product/${p.id}`" @click="searchPhrase = ''">
-					<img :src="getImgSrc(p.image)" :alt="p.title" class="w-10" />
+					<img :src="p.image" :alt="p.title" class="w-10" />
 				</RouterLink>
 
 				<RouterLink :to="`/catalog/product/${p.id}`" @click="searchPhrase = ''">

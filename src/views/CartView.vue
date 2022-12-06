@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { getImgSrc } from '../global/index';
 import { useProductStore } from '@/stores/ProductStore';
 
 const productStore = useProductStore();
@@ -65,7 +64,7 @@ const createOrder = () => {
 						<div class="cell image">
 							<RouterLink :to="`/catalog/product/${item.product.id}`">
 								<img
-									:src="`${getImgSrc(item.product.image)}`"
+									:src="`${item.product.image}`"
 									:alt="`${item.product.title}`"
 									class="w-24"
 								/>
